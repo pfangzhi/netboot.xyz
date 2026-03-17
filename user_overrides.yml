@@ -15,7 +15,7 @@ custom_templates_dir: "menu"   # 或你实际想要的路径
 # boot_domain: boot.mysitename.com
 
 # set boot version
-# boot_version: "2.x"
+# boot_version: "3.x"
 
 # bootloader_tftp_enabled: false
 # bootloader_https_enabled: true
