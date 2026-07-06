@@ -209,8 +209,8 @@ releases:
     mirror: http://dl-cdn.alpinelinux.org
     name: Alpine Linux
     versions:
-    - code_name: v3.23
-      name: '3.23'
+    - code_name: v3.24
+      name: '3.24'
     - code_name: edge
       name: Edge (development)
   archlinux:
@@ -220,8 +220,8 @@ releases:
     mirror: mirrors.kernel.org
     name: Arch Linux
     versions:
-    - code_name: 2026.04.01
-      name: 2026.04.01
+    - code_name: 2026.07.01
+      name: 2026.07.01
   blackarch:
     enabled: true
     menu: linux
@@ -247,11 +247,11 @@ releases:
     mirror: https://builds.coreos.fedoraproject.org
     name: Fedora CoreOS
     versions:
-    - code_name: 43.20260316.3.1
+    - code_name: 44.20260607.3.1
       name: stable
-    - code_name: 43.20260331.2.1
+    - code_name: 44.20260621.2.1
       name: testing
-    - code_name: 44.20260405.1.1
+    - code_name: 44.20260621.1.1
       name: next
   debian:
     archive_mirror: http://archive.debian.org
@@ -295,6 +295,8 @@ releases:
     mirror: http://mirrors.kernel.org
     name: Fedora
     versions:
+    - code_name: 44
+      name: 44
     - code_name: 43
       name: 43
     - code_name: 42
@@ -343,8 +345,8 @@ releases:
     mirror: https://downloads.ipfire.org
     name: IPFire
     versions:
-    - code_name: 2.29-core200
-      name: 2.29 Core200
+    - code_name: 2.29-core202
+      name: 2.29 Core202
   k3os:
     enabled: true
     menu: linux
@@ -400,8 +402,8 @@ releases:
     mirror: http://mirrors.kernel.org
     name: Mageia
     versions:
-    - code_name: '8'
-      name: '8'
+    - code_name: ''
+      name: ''
     - code_name: cauldron
       name: cauldron
   nixos:
@@ -410,6 +412,8 @@ releases:
     menu: linux
     name: NixOS
     versions:
+    - code_name: nixos-26.05
+      name: nixos-26.05
     - code_name: nixos-25.11
       name: nixos-25.11
     - code_name: nixos-25.05
@@ -496,6 +500,37 @@ releases:
     enabled: true
     menu: linux
     name: Proxmox
+  rhcos:
+    base_dir: pub/openshift-v
+    enabled: true
+    menu: linux
+    mirror: https://mirror.openshift.com
+    name: Red Hat Enterprise Linux CoreOS
+    versions:
+    - code_name: 4.12
+      major_version: 4
+      name: 4.12 [Extended Support]
+    - code_name: 4.14
+      major_version: 4
+      name: 4.14 [Extended Support]
+    - code_name: 4.16
+      major_version: 4
+      name: 4.16 [Extended Support]
+    - code_name: 4.17
+      major_version: 4
+      name: 4.17 [Maintenance Support]
+    - code_name: 4.18
+      major_version: 4
+      name: 4.18 [Maintenance Support]
+    - code_name: 4.19
+      major_version: 4
+      name: 4.19 [Maintenance Support]
+    - code_name: 4.2
+      major_version: 4
+      name: 4.20 [Full Support]
+    - code_name: 4.21
+      major_version: 4
+      name: 4.21 [Full Support]
   rhel:
     enabled: true
     menu: linux
@@ -513,6 +548,28 @@ releases:
       name: 9 (Latest)
     - code_name: 8
       name: 8 (Latest)
+  scos:
+    base_dir: centos/scos
+    enabled: true
+    menu: linux
+    mirror: https://cloud.centos.org
+    name: CentOS Stream CoreOS
+    versions:
+    - code_name: 9.0.20250222-0
+      major_version: 9
+      name: 9.0.20250222-0
+    - code_name: 9.0.20250411-0
+      major_version: 9
+      name: 9.0.20250411-0
+    - code_name: 9.0.20250510-0
+      major_version: 9
+      name: 9.0.20250510-0
+    - code_name: 10.0.20250628-0
+      major_version: 10
+      name: 10.0.20250628-0
+    - code_name: 10.0.20251103-0
+      major_version: 10
+      name: 10.0.20251103-0
   slackware:
     base_dir: slackware
     enabled: true
@@ -535,14 +592,14 @@ releases:
     mirror: https://netboot.smartos.org/os/
     name: SmartOS
     versions:
-    - code_name: 20260402T000627Z
-      name: 20260402T000627Z
-    - code_name: 20260319T000507Z
-      name: 20260319T000507Z
-    - code_name: 20260306T044811Z
-      name: 20260306T044811Z
-    - code_name: 20260305T000543Z
-      name: 20260305T000543Z
+    - code_name: 20260625T000407Z
+      name: 20260625T000407Z
+    - code_name: 20260611T215617Z
+      name: 20260611T215617Z
+    - code_name: 20260611T000507Z
+      name: 20260611T000507Z
+    - code_name: 20260528T000227Z
+      name: 20260528T000227Z
   talos:
     enabled: true
     menu: linux
@@ -691,12 +748,8 @@ releases:
     mirror: http://archive.ubuntu.com
     name: Ubuntu
     versions:
-    - code_name: questing
-      name: 25.10 Questing Quokka
-    - code_name: plucky
-      name: 25.04 Plucky Puffin
-    - code_name: oracular
-      name: 24.10 Oracular Oriole
+    - code_name: resolute
+      name: 26.04 LTS Resolute Raccoon
     - code_name: noble
       name: 24.04 LTS Noble Numbat
     - code_name: jammy
